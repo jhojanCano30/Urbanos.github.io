@@ -1,0 +1,361 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f5f1;
+    color: #333;
+    margin: 0%;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f5f1;
+}
+
+.sticky-menu {
+    position: sticky;
+    top: 0;
+    background-color:rgb(0,56,48);
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: .9;
+}
+
+.sticky-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sticky-menu ul li {
+    margin: 0;
+}
+
+.sticky-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.sticky-menu ul li a:hover {
+    background-color:rgb(8,128,119);
+}
+
+.sticky-menu ul li a:active {
+    background-color: #1e684d;
+}
+
+.bannerp{
+    width: 100%;
+}
+
+#empresa-vision-mision {
+    background-color: #e5f2e6;
+    border: 2px solid #a3d9a5;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#empresa-vision-mision:hover{
+    transform: translateY(-5px);
+    
+}
+
+#empresa-vision-mision h1 {
+    color: #228b22;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+#empresa-vision-mision p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.empresa-vision-mision .eslogan {
+    font-style: italic;
+    color: #2e8b57;
+    text-align: center;
+    font-size: 1.2em;
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-button a img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-button a img:hover {
+    transform: scale(1.1);
+}
+
+#product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(212, 4, 4, 0.1);
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(0,56,48);
+    text-align: center;
+    padding: 20px;
+    border-right: 2px solid #f0f0f0;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.05);
+}
+
+.carousel-item p {
+    margin-top: 22px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    color: rgb(0,56,48);
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.card p {
+    padding: 0 10px;
+    font-size: 1em;
+    color: #666;
+}
+
+.card .btn {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color:rgb(0,56,48);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #2e8b57;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.mapa{
+    background-color: #1e684d;
+}
+.mapa h1{
+    color: #fff;
+    text-align: center;
+}
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33% - 20px);
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    background-color:rgb(0,56,48);
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-section .social a {
+    color: #ccc;
+    margin-right: 10px;
+    text-decoration:#1e684d;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer-section .social a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .sticky-menu ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: :#1e684d;
+    }
+
+    .sticky-menu ul.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        margin-right: 15px;
+    }
+}
