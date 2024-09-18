@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Cuotas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Cuotas</h1>
+        <form id="cuotaForm">
+            <label for="cuota">Cuota mensual:</label>
+            <input type="number" id="cuota" name="cuota" value="300000" readonly>
+            <button type="button" onclick="registrarCuota()">Registrar Cuota</button>
+        </form>
+        <div id="resultados">
+            <h2>Resultados</h2>
+            <p>Capital Pagado: <span id="capitalPagado">0.00</span></p>
+            <p>Intereses Pagados: <span id="interesesPagados">0.00</span></p>
+            <p>Saldo Pendiente: <span id="saldoPendiente">6000000.00</span></p>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mes</th>
+                    <th>Cuota</th>
+                    <th>Intereses</th>
+                    <th>Capital</th>
+                    <th>Saldo</th>
+                </tr>
+            </thead>
+            <tbody id="tablaCuotas">
+            </tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
